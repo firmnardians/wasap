@@ -1,0 +1,41 @@
+.headerFlex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 50px;
+	max-width: 869px;
+	margin: auto;
+}
+
+.headerFlex h5 {
+	color: var(--primary);
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 28px;
+	margin: 0px;
+}
+
+.headerBackground {
+	background-color: var(--white);
+	box-shadow: 0 2px 6px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #dadce0;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.ulNavigation {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ulNavigation li {
+	list-style: none;
+	padding-left: 20px;
+}
+
+.ulNavigation p {
+	font-size: 16px;
+	margin: 0px;
+}

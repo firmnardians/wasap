@@ -1,6 +1,7 @@
 :root {
 	--primary: #136dc2;
 	--white: #ffffff;
+	--danger: rgb(188, 21, 21);
 }
 
 html,
@@ -18,6 +19,34 @@ a {
 
 * {
 	box-sizing: border-box;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.m-0 {
+	margin: 0;
+}
+
+.pt-10 {
+	padding-top: 10px;
+}
+
+.pt-5 {
+	padding-top: 5px;
+}
+
+.text-error {
+	color: var(--danger);
+}
+
+.pt-2 {
+	padding-top: 2px;
+}
+
+.pb-5 {
+	padding-bottom: 5px;
 }
 
 /* @media (prefers-color-scheme: dark) {

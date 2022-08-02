@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './Button.module.css';
 
 /**
  *
- * @param {string} title
+ * @param {String} title
+ * @param {Boolean} disabled
+ * @param {MouseEvent} onClick
+ *
  * @returns
  */
 
-export default function Button({ title = 'Title' }) {
-	return <button className={styles.button}>{title}</button>;
-}
+export default memo(function Button({ title = 'Title', disabled, onClick }) {
+	return (
+		<button onClick={onClick} disabled={disabled} className={styles.button}>
+			{title}
+		</button>
+	);
+});

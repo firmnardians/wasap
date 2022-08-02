@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { Fragment } from 'react';
 import CardCenter from '../components/center';
-import Header from '../components/header';
 import Meta from '../meta';
 import styles from '../styles/Home.module.css';
 import Button from '../components/button';
+import Link from 'next/link';
 
 export default function Home() {
 	return (
@@ -13,7 +13,6 @@ export default function Home() {
 				title='Welcome'
 				desc='Cara mudah untuk mengabari seseorang di WhatsApp tanpa harus simpan nomor. Built by firmnardians for everyone.'
 			/>
-			<Header />
 
 			<main>
 				<CardCenter>
@@ -22,7 +21,11 @@ export default function Home() {
 
 						<p>Cara mudah untuk mengabari seseorang di WhatsApp tanpa harus simpan nomor.</p>
 
-						<Button title='Cobain Sekarang' />
+						<Link href='/dashboard'>
+							<a>
+								<Button title='Cobain Sekarang' />
+							</a>
+						</Link>
 					</div>
 				</CardCenter>
 			</main>

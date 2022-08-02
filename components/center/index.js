@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styles from './Center.module.css';
 
 /**
@@ -7,6 +7,6 @@ import styles from './Center.module.css';
  * @returns
  */
 
-export default function CardCenter({ children }) {
+export default memo(function CardCenter({ children }) {
 	return <div className={styles.center}>{children}</div>;
-}
+});

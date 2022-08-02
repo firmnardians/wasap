@@ -1,11 +1,16 @@
-import React from 'react';
+import Link from 'next/link';
+import React, { memo } from 'react';
 import styles from './Header.module.css';
 
-export default function Header() {
+export default memo(function Header() {
 	return (
 		<header className={styles.headerBackground}>
 			<div className={styles.headerFlex}>
-				<h5>WASAP</h5>
+				<Link href='/'>
+					<a>
+						<h5 className='pointer'>WASAP</h5>
+					</a>
+				</Link>
 
 				<nav>
 					<ul className={styles.ulNavigation}>
@@ -15,7 +20,7 @@ export default function Header() {
 							</li>
 						</a>
 
-						<a href=''>
+						<a href='https://github.com/firmnardians/wasap' target='_blank' rel='noreferrer'>
 							<li>
 								<p>Github</p>
 							</li>
@@ -25,4 +30,4 @@ export default function Header() {
 			</div>
 		</header>
 	);
-}
+});

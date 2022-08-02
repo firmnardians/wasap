@@ -39,3 +39,9 @@
 	font-size: 16px;
 	margin: 0px;
 }
+
+@media only screen and (max-width: 569px) {
+	.headerFlex h5 {
+		font-size: 22px;
+	}
+}
